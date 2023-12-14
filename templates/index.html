@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Storage</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h1>File Storage</h1>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="file">Choose a file:</label>
+    <input type="file" name="file" id="file" required>
+    <button type="submit">Upload</button>
+</form>
+
+<hr>
+
+<h2>Download File</h2>
+<form action="/download" method="get">
+    <label for="fileReferenceID">Enter File Reference ID:</label>
+    <input type="text" name="fileReferenceID" id="fileReferenceID" required>
+    <button type="submit">Download</button>
+</form>
+</body>
+</html>
